@@ -23,8 +23,10 @@ const config: Config = {
     extend: {
       backgroundImage: {
         gradient: "linear-gradient(90deg, #FF9898, #8054FF)",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-gray-radial":
+          "linear-gradient(120deg, #494955 0%,  #141414 100%)",
+        "gradient-gray-linear":
+          "linear-gradient(0deg, rgba(20,20,20,0.5) 0%, rgba(73,73,85,1) 50%, rgba(20,20,20,0.5) 100%)",
       },
       fontWeight: {
         titleBold: "var(--titleBold)",
@@ -46,9 +48,9 @@ const config: Config = {
         dark_yellow: "#857001",
         dark_blue_black: "#343a40",
         gray: "#9E9E9E",
-        grey1: "#9E9E9E",
-        grey2: "#e9ecef",
-        grey3: "#6c757d",
+        gray1: "#131415",
+        gray2: "#18181C",
+        gray3: "#222228",
       },
     },
   },
