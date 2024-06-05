@@ -2,15 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 import "./style.css";
 import VerticalLines from "./VerticalLines";
+import Object from "./Object";
+import Bubless from "./bubless";
 
 function SectionOne() {
   return (
     <section className="h-screen w-screen flex flex-col items-center">
       <VerticalLines />
-      <div className="rounded-full bg-gradient-gray-radial  w-24 h-24 absolute top-1/3 right-48 -z-10 blur-md"></div>
-      <div className="rounded-full bg-gradient-gray-radial  w-[538px] h-[538px] absolute top-[50px] blur-3xl -z-10 opacity-40"></div>
-      <div className="rounded-full bg-gradient-gray-radial  w-[130px] h-[130px] absolute top-[45%] -z-10 left-60 blur-md"></div>
-      <div className="rounded-full bg-gradient-gray-radial  w-16 h-16 absolute top-[70px] left-[45%] -z-10 blur-md"></div>
+      <Bubless />
       <div className="container flex flex-col gap-8 mt-[200px]">
         <h1 className="text-[64px] flex justify-center text-center">
           Fuel Your Digital Evolution
@@ -119,14 +118,8 @@ function SectionOne() {
           </div>
         </div>
       </div>
-      <div className="absolute -bottom-80 left-0 -z-10">
-        <Image
-          src="/images/object.png"
-          alt="Object"
-          className="w-screen h-[450px]"
-          width={1440}
-          height={475}
-        ></Image>
+      <div className=" -bottom-80 left-0 -z-10 w-screen absolute">
+        <Object />
       </div>
     </section>
   );

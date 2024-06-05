@@ -21,7 +21,7 @@
   }
   
   .active_nav {
-    @apply !text-black relative;
+    @apply !text-white relative;
   }
 
 

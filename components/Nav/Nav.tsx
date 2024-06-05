@@ -48,64 +48,67 @@ const Navbar = () => {
   return (
     <section className="w-screen flex justify-center">
       <nav
-        className={`container flex justify-between fixed w-full py-2 z-40 ${
-          open ? "shadow-none" : "shadow-md"
-        } ${visible ? "transleteNavUp" : "transleteNav"}`}
+        className={` fixed w-full py-2 z-40 left-0 ${
+          window.scrollY == 0 ? "bg-transparent" : "bg-black"
+        }
+           ${visible ? "transleteNavUp" : "transleteNav"}`}
       >
-        <Link href="/" className="flex gap-2 items-center">
-          <Image
-            src="/images/logo.png"
-            alt="logo"
-            width={40}
-            height={40}
-            className="object-contain"
-          />
-          <p className="font-poppins text-2xl tracking-wide	 text-white">
-            <span>Boost</span>
-            Web
-          </p>
-        </Link>
+        <div className="container flex justify-between">
+          <Link href="/" className="flex gap-2 items-center">
+            <Image
+              src="/images/logo.png"
+              alt="logo"
+              width={40}
+              height={40}
+              className="object-contain"
+            />
+            <p className="font-poppins text-2xl tracking-wide	 text-white">
+              <span>Boost</span>
+              Web
+            </p>
+          </Link>
 
-        {/* Desktop Navigation */}
-        <div className="lg:flex hidden">
-          <div className="flex gap-3 md:gap-5">
-            <ul className="flex gap-4 items-center">
-              {linksData.data.map((item, index) => (
-                <li
-                  key={index}
-                  className={`${pathname === item.path ? "" : "hover_nav"}`}
-                >
-                  <Link
-                    href={item.path}
-                    className={`nav_list ${
-                      pathname === item.path ? "active_nav" : ""
-                    }`}
+          {/* Desktop Navigation */}
+          <div className="lg:flex hidden">
+            <div className="flex gap-3 md:gap-5">
+              <ul className="flex gap-4 items-center">
+                {linksData.data.map((item, index) => (
+                  <li
+                    key={index}
+                    className={`${pathname === item.path ? "" : "hover_nav"}`}
                   >
-                    {item.titles}
+                    <Link
+                      href={item.path}
+                      className={`nav_list ${
+                        pathname === item.path ? "active_nav" : ""
+                      }`}
+                    >
+                      {item.titles}
+                    </Link>
+                  </li>
+                ))}
+                <li>
+                  <Link href="/contact" className="btn ml-4">
+                    Contact
                   </Link>
                 </li>
-              ))}
-              <li>
-                <Link href="/contact" className="btn ml-4">
-                  Contact
-                </Link>
-              </li>
-            </ul>
+              </ul>
+            </div>
           </div>
-        </div>
 
-        {/* Mobile Navigation */}
-        <div className="lg:hidden flex relative" ref={navRef}>
-          <button className=" z-50">
-            <Hamburger
-              toggled={open}
-              toggle={setOpen}
-              label="Show menu"
-              size={24}
-              color="#343a40"
-              rounded
-            />
-          </button>
+          {/* Mobile Navigation */}
+          <div className="lg:hidden flex relative" ref={navRef}>
+            <button className=" z-50">
+              <Hamburger
+                toggled={open}
+                toggle={setOpen}
+                label="Show menu"
+                size={24}
+                color="#343a40"
+                rounded
+              />
+            </button>
+          </div>
         </div>
       </nav>
       <Drawer
