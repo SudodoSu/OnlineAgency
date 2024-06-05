@@ -19,7 +19,7 @@ function SectionThree() {
           </h1>
           <p>
             A good design is not only aesthetically pleasing, but also
-            functional. It should be able to solve the problem{" "}
+            functional. It should be able to solve the problem
           </p>
           <button className="flex">
             <Link href="/contact" className="btn">
