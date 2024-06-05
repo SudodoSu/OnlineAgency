@@ -1,5 +1,4 @@
 import Link from "next/link";
-import CircularHrList from "./Circles";
 import Image from "next/image";
 
 function SectionThree() {

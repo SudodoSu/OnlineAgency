@@ -12,7 +12,7 @@ function SectionFour() {
             width={542}
             height={542}
           />
-          <div className="rounded-full bg-gradient-gray-radial  w-24 h-24 absolute -bottom-10 -right-5 -z-10 blur-md"></div>
+          <div className="rounded-full bg-gradient-gray-radial  w-24 h-24 absolute -bottom-10 -right-5git  -z-10 blur-md"></div>
           <div className="rounded-full bg-gradient-gray-radial  w-16 h-16 absolute -top-5 -left-10 -z-10 blur-md"></div>
         </div>
         <div className="w-1/2">
