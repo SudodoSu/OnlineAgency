@@ -14,17 +14,18 @@ const Navbar = () => {
   const [visible, setVisible] = useState(true);
   const [open, setOpen] = React.useState(false);
   const navRef = useRef<HTMLDivElement>(null);
+  const [windowScrolled, setWindowScrolled] = useState(true);
   const pathname = usePathname();
 
-  const handleScroll = () => {
-    const currentScrollPos = window.scrollY;
-    const isScrolledDown = currentScrollPos < prevScrollPos;
-
-    setVisible(isScrolledDown);
-    setPrevScrollPos(currentScrollPos);
-  };
-
   useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+      const isScrolledDown = currentScrollPos < prevScrollPos;
+      setWindowScrolled(window.scrollY === 0);
+
+      setVisible(isScrolledDown);
+      setPrevScrollPos(currentScrollPos);
+    };
     window.addEventListener("scroll", handleScroll);
 
     return () => {
@@ -49,7 +50,7 @@ const Navbar = () => {
     <section className="w-screen flex justify-center">
       <nav
         className={` fixed w-full py-2 z-40 left-0 ${
-          window.scrollY == 0 ? "bg-transparent" : "bg-black"
+          windowScrolled ? "bg-transparent" : "bg-black"
         }
            ${visible ? "transleteNavUp" : "transleteNav"}`}
       >

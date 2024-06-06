@@ -61,7 +61,7 @@ p {
 /* Button */
 
 .btn {
-  @apply flex items-center py-1.5 bg-gradient rounded-md font-poppins text-white text-sm px-[28px] leading-7;
+  @apply flex items-center py-1.5 bg-gradient rounded-md font-poppins text-white text-sm px-[28px] leading-7 cursor-pointer;
 }
 
 /* .btn:focus {

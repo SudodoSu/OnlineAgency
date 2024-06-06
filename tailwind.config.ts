@@ -7,6 +7,13 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      sm: "36rem",
+      md: "42rem",
+      lg: "56rem",
+      xl: "72rem",
+    },
+
     container: {
       padding: {
         DEFAULT: "15px",
@@ -51,6 +58,7 @@ const config: Config = {
         gray1: "#131415",
         gray2: "#18181C",
         gray3: "#222228",
+        gray4: "#313139",
       },
     },
   },

@@ -4,7 +4,7 @@ import "./globals.css";
 import { Poppins } from "next/font/google";
 import Navbar from "@/components/Nav/Nav";
 import Footer from "@/components/Footer/Footer";
-// import Footer from "@/components/Footer/Footer";
+import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -69,9 +69,11 @@ export default function RootLayout({
     <>
       <html lang={locale}>
         <body className={`${poppins.variable} font-poppins`}>
-          <Navbar />
-          {children}
-          <Footer />
+          <AppRouterCacheProvider>
+            <Navbar />
+            {children}
+            <Footer />
+          </AppRouterCacheProvider>
         </body>
       </html>
     </>

@@ -1,3 +1,4 @@
+import FaqSection from "@/components/Faq/FaqSection";
 import SectionOne from "@/components/Section_1/SectionOne";
 import SectionTwo from "@/components/Section_2/SectionTwo";
 import SectionThree from "@/components/Section_3/SectionThree";
@@ -10,6 +11,7 @@ function page() {
       <SectionOne />
       <SectionTwo />
       <SectionThree />
+      <FaqSection />
       <SectionFour />
     </main>
   );
