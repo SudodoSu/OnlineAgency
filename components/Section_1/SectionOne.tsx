@@ -21,7 +21,7 @@ function SectionOne() {
       <VerticalLines />
       <Bubless />
       <div className="container flex flex-col gap-8 mt-[200px]">
-        <h1 className="text-[64px] flex justify-center text-center">
+        <h1 className="text-5xl lg:text-[64px] flex justify-center text-center">
           Fuel Your Digital Evolution
         </h1>
         <div className="flex justify-center">
@@ -32,7 +32,7 @@ function SectionOne() {
         </div>
         <div className="flex justify-center">
           <button>
-            <Link href="/contact" className="btn">
+            <Link href="#contact" className="btn">
               Start Your Project
             </Link>
           </button>

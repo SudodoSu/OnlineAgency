@@ -2,7 +2,7 @@ import ServicesList from "./ServicesList";
 
 function SectionTwo() {
   return (
-    <section className="w-screen mt-[300px]">
+    <section className="w-screen pt-[400px]" id="services">
       <div className="container">
         <div className="text-left flex flex-col gap-4 mb-8">
           <h1 className="text-5xl">Services</h1>

@@ -2,10 +2,10 @@ import Faq from "./Faq";
 
 function FaqSection() {
   return (
-    <section className="w-screen mb-40">
+    <section className="w-screen mb-40 pt-20" id="faq">
       <div className="container flex flex-col items-center">
         <div className="mb-8">
-          <h1 className="text-5xl">Freqfently Asked Questions</h1>
+          <h1 className="text-5xl">Frequently Asked Questions</h1>
         </div>
         <div>
           <Faq />

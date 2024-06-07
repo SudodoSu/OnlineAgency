@@ -78,18 +78,18 @@ const Navbar = () => {
                     key={index}
                     className={`${pathname === item.path ? "" : "hover_nav"}`}
                   >
-                    <Link
+                    <a
                       href={item.path}
                       className={`nav_list ${
                         pathname === item.path ? "active_nav" : ""
                       }`}
                     >
                       {item.titles}
-                    </Link>
+                    </a>
                   </li>
                 ))}
                 <li>
-                  <Link href="/contact" className="btn ml-4">
+                  <Link href="#contact" className="btn ml-4">
                     Contact
                   </Link>
                 </li>
@@ -118,11 +118,11 @@ const Navbar = () => {
         onClose={toggleDrawer(false)}
         className=" drawer_custom translate-y-[64px] !z-30"
       >
-        <div className={`bg-white w-full px-3  py-3 shadow-md`}>
+        <div className={`bg-black w-full px-3  py-3 shadow-md`}>
           <ul className="flex flex-col gap-4">
             {linksData.data.map((item, index) => (
               <li key={index} className={`flex `}>
-                <Link
+                <a
                   href={item.path}
                   className={`nav_list ${
                     pathname === item.path ? "active_nav" : ""
@@ -136,11 +136,11 @@ const Navbar = () => {
                   >
                     {item.titles}
                   </div>
-                </Link>
+                </a>
               </li>
             ))}
             <li className="flex" onClick={() => setOpen(false)}>
-              <Link href="/contact" className="btn pb-2">
+              <Link href="#contact" className="btn pb-2">
                 Contact
               </Link>
             </li>

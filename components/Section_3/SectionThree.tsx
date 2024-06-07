@@ -34,11 +34,13 @@ function SectionThree() {
             of users. User research, usability testing, and feedback mechanisms
             are essential for creating intuitive and engaging experiences.
           </p>
-          <button className="flex">
-            <Link href="/contact" className="btn">
-              Contact Us
-            </Link>
-          </button>
+          <div className="flex">
+            <button>
+              <Link href="#contact" className="btn">
+                Contact Us
+              </Link>
+            </button>
+          </div>
         </div>
       </div>
     </section>

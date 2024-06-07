@@ -4,7 +4,7 @@ import Globe from "./Globe";
 
 function SectionFour() {
   return (
-    <section className="w-screen relative">
+    <section className="w-screen relative pt-20" id="contact">
       <div className="container flex gap-8">
         <div className="w-1/2 relative">
           <Globe />
@@ -15,7 +15,7 @@ function SectionFour() {
           <h2 className="text-5xl mb-5">Get In Toush</h2>
           <p>
             A good design is not only aesthetically pleasing, but also
-            functional. It should6 be able to solve the problem{" "}
+            functional. It should be able to solve the problem{" "}
           </p>
           <div className="mt-8">
             <ContactForm />

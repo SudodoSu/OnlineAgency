@@ -19,58 +19,29 @@ function Footer() {
               functional. It should be able to solve the problem{" "}
             </p>
           </div>
-          <div className="w-1/2">
-            <h3>Sections</h3>
+          <div>
+            <h3 className="mb-6 font-semibold text-2xl">Quick Links</h3>
             <div className="flex justify-between">
-              <ul>
+              <ul className="flex flex-col gap-3">
                 <li>
-                  <a href="">Home</a>
+                  <a href="#services" className="hover:underline">
+                    Services
+                  </a>
                 </li>
                 <li>
-                  <a href="">Home</a>
+                  <a href="#references" className="hover:underline">
+                    References
+                  </a>
                 </li>
                 <li>
-                  <a href="">Home</a>
+                  <a href="/prices" className="hover:underline">
+                    Prices
+                  </a>
                 </li>
                 <li>
-                  <a href="">Home</a>
-                </li>
-                <li>
-                  <a href="">Home</a>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <a href="">Home</a>
-                </li>
-                <li>
-                  <a href="">Home</a>
-                </li>
-                <li>
-                  <a href="">Home</a>
-                </li>
-                <li>
-                  <a href="">Home</a>
-                </li>
-                <li>
-                  <a href="">Home</a>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <a href="">Home</a>
-                </li>
-                <li>
-                  <a href="">Home</a>
-                </li>
-                <li>
-                  <a href="">Home</a>
-                </li>
-                <li>
-                  <a href="">Home</a>
-                </li>
-                <li>
-                  <a href="">Home</a>
+                  <a href="#faq" className="hover:underline">
+                    Faq
+                  </a>
                 </li>
               </ul>
             </div>
@@ -78,20 +49,9 @@ function Footer() {
         </div>
       </div>
 
-      <div className="w-screen py-12">
-        <div className="container flex justify-between">
+      <div className="w-screen py-6">
+        <div className="container flex justify-between text-sm">
           <p>All Rights Reservd BoostWeb.io 2024</p>
-          <ul className="flex gap-4">
-            <li>
-              <a href="">tweeter</a>
-            </li>
-            <li>
-              <a href="">tweeter</a>
-            </li>
-            <li>
-              <a href="">tweeter</a>
-            </li>
-          </ul>
         </div>
       </div>
     </footer>
