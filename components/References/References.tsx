@@ -6,8 +6,8 @@ function References() {
     <section className="w-full mb-20 pt-20" id="references">
       <div className="container">
         <div className="mb-10">
-          <h1 className="text-5xl mb-5">References</h1>
-          <p className="max-w-[40%]">
+          <h1 className="text-4xl sm:text-5xl mb-5">References</h1>
+          <p className="lg:max-w-[40%]">
             Explore our portfolio of past projects showcased in the slider
             below.
           </p>
