@@ -11,6 +11,10 @@ function ContactForm() {
   const [value, setValue] = React.useState("");
   const [open, setOpen] = React.useState(false);
 
+  const serviceId = process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID;
+  const templateId = process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID;
+  const publicKey = process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY;
+
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -19,10 +23,11 @@ function ContactForm() {
     setTimeout(() => {
       setOpen(false);
     }, 10000);
+
     if (form.current) {
       emailjs
-        .sendForm("service_an4ae79", "template_xoovg6g", form.current, {
-          publicKey: "TyK2R5cp5qjWvOuRO",
+        .sendForm(serviceId as string, templateId as string, form.current, {
+          publicKey: publicKey as string,
         })
         .then(
           () => {
@@ -36,10 +41,6 @@ function ContactForm() {
         );
     }
   };
-
-  const handleChange = (newValue: string) => {
-    setValue(newValue);
-  };
   return (
     <form
       ref={form}
@@ -48,7 +49,7 @@ function ContactForm() {
     >
       <div>
         <input
-          className="text-white bg-gray2 placeholder-gray w-[80%] rounded-md py-3 px-8"
+          className="text-white bg-gray2 placeholder-gray xl:w-[80%] w-full rounded-md py-3 px-8"
           required
           type="text"
           name="from_name"
@@ -57,7 +58,7 @@ function ContactForm() {
       </div>
       <div>
         <input
-          className="text-white bg-gray2 placeholder-gray w-[80%] rounded-md py-3 px-8"
+          className="text-white bg-gray2 placeholder-gray xl:w-[80%] w-full rounded-md py-3 px-8"
           required
           type="email"
           name="from_email"
@@ -66,7 +67,7 @@ function ContactForm() {
       </div>
       <div>
         <textarea
-          className="text-white resize-none h-52 bg-gray2 placeholder-gray w-[80%] rounded-md py-3 px-8"
+          className="text-white resize-none h-52 bg-gray2 placeholder-gray xl:w-[80%] w-full rounded-md py-3 px-8"
           name="message"
           placeholder="Message"
         />
@@ -80,7 +81,7 @@ function ContactForm() {
             value="Send"
           />
         </button>
-        <div className="relative left-0 w-[80%]">
+        <div className="relative left-0 xl:w-[80%] w-full">
           <Collapse in={open}>
             <Alert
               action={

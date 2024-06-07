@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer className="mt-20">
       <div className="w-full bg-gray2 py-12">
-        <div className="container flex justify-between">
+        <div className="container flex justify-between flex-col sm:flex-row  gap-8 sm:gap-0">
           <div>
             <div className="w-14 mb-5">
               <Image
@@ -24,18 +24,18 @@ function Footer() {
             <div className="flex justify-between">
               <ul className="flex flex-col gap-3">
                 <li>
-                  <a href="#services" className="hover:underline">
+                  <a href="/#services" className="hover:underline">
                     Services
                   </a>
                 </li>
                 <li>
-                  <a href="#references" className="hover:underline">
+                  <a href="/#references" className="hover:underline">
                     References
                   </a>
                 </li>
                 <li>
-                  <a href="/prices" className="hover:underline">
-                    Prices
+                  <a href="/pricing" className="hover:underline">
+                    Pricing
                   </a>
                 </li>
                 <li>

@@ -6,7 +6,7 @@ function ServicesList() {
   const [Hovered, setHovered] = useState<[boolean, number]>([false, -1]);
 
   return (
-    <div className="grid gap-8 grid-cols-3 ">
+    <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 ">
       {servicesData.data.map((item, index) => (
         <div
           key={index}

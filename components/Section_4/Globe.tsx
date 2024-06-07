@@ -1,9 +1,9 @@
 function Globe() {
   return (
-    <div>
+    <div className="-z-30 w-1/2 sm:w-full ">
       <svg
         width="100%"
-        height="542"
+        className="h-full sm:h-[542px]"
         viewBox="0 0 542 542"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
