@@ -11,8 +11,8 @@ function Pricing() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {PricingPackage.data.map((item, index) => (
-            <div className="px-8 py-10 bg-gray2 rounded-[20px]">
-              <div key={index} className="flex flex-col gap-6">
+            <div key={index} className="px-8 py-10 bg-gray2 rounded-[20px]">
+              <div className="flex flex-col gap-6">
                 <h1 className="text-2xl text-center">{item.title}</h1>
                 <hr className="text-gray" />
                 <ul className="flex flex-col gap-4">
