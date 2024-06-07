@@ -47,7 +47,7 @@ const Navbar = () => {
     };
 
   return (
-    <section className="w-screen flex justify-center">
+    <section className="w-full flex justify-center">
       <nav
         className={` fixed w-full py-2 z-40 left-0 ${
           windowScrolled ? "bg-transparent" : "bg-black"

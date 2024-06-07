@@ -4,7 +4,7 @@ import Globe from "./Globe";
 
 function SectionFour() {
   return (
-    <section className="w-screen relative pt-20" id="contact">
+    <section className="w-full relative pt-20" id="contact">
       <div className="container flex gap-8">
         <div className="w-1/2 relative">
           <Globe />

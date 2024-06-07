@@ -17,7 +17,7 @@ import Sceleton4 from "./Sceleton/4";
 
 function SectionOne() {
   return (
-    <section className="h-screen w-screen flex flex-col items-center">
+    <section className="h-screen w-full flex flex-col items-center">
       <VerticalLines />
       <Bubless />
       <div className="container flex flex-col gap-8 mt-[200px]">

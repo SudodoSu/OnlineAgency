@@ -22,7 +22,7 @@ function ContactForm() {
     if (form.current) {
       emailjs
         .sendForm("service_an4ae79", "template_xoovg6g", form.current, {
-          publicKey: "QslYBLVV8d39BKjwl",
+          publicKey: "TyK2R5cp5qjWvOuRO",
         })
         .then(
           () => {

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 function SectionThree() {
   return (
-    <section className="w-screen mt-16">
+    <section className="w-full mt-16">
       <div className="flex gap-8 container items-center">
         <div className="w-1/2 relative">
           <div className="w-14 h-14 absolute left-[45%] bottom-[46%]">
