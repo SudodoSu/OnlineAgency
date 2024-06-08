@@ -1,4 +1,5 @@
 import FaqSection from "@/components/Faq/FaqSection";
+import LimitedOffer from "@/components/LimitedOffer/LimitedOffer";
 import References from "@/components/References/References";
 import SectionOne from "@/components/Section_1/SectionOne";
 import SectionTwo from "@/components/Section_2/SectionTwo";
@@ -12,6 +13,7 @@ function page() {
       <SectionOne />
       <SectionTwo />
       <SectionThree />
+      <LimitedOffer />
       <FaqSection />
       <References />
       <SectionFour />

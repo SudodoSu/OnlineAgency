@@ -20,7 +20,7 @@ export const servicesData: DataObject = {
   data: [
     {
       path: (
-        <MdOutlineDesignServices className="text-7xl text-white" size="48px" />
+        <MdOutlineDesignServices className="text-5xl text-white" size="48px" />
       ),
       title: "Web Design",
       des: "Crafting visually stunning and user-friendly websites that engage and convert visitors",

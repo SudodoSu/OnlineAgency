@@ -13,35 +13,42 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Boost Web",
+  title: "Boost Web - Professional Website Design & Maintenance Services",
   description:
-    "Welcome to Villa Panorama, your luxurious accommodation in Istria. Experience breathtaking views, modern amenities, and personalized service. ⭐⭐⭐⭐⭐",
+    "Boost Web offers professional website design, software development and maintenance services. Create stunning websites with personalized service and modern amenities.",
   icons: {
     icon: "/assets/images/logo.png",
   },
   generator: "Next.js",
-  applicationName: "Accommodation Villa Panorama",
+  applicationName: "Boost Web",
   referrer: "origin-when-cross-origin",
-  keywords: ["Accommodation", "Villa Panorama", "Istria", "Croatia"],
+  keywords: [
+    "Boost Web",
+    "website design",
+    "website development",
+    "website maintenance",
+    "software development",
+    "software design",
+    "professional website services",
+  ],
   robots: "index, follow",
   viewport: "width=device-width, initial-scale=1.0",
   openGraph: {
     type: "website",
-    title: "Accommodation Villa Panorama - Istria",
+    title: "Boost Web - Professional Website Design & Maintenance Services",
     description:
-      "Welcome to Villa Panorama, your luxurious accommodation in Istria. Experience breathtaking views, modern amenities, and personalized service. ⭐⭐⭐⭐⭐",
-    url: "https://villapanoramaistria.com",
+      "Boost Web offers professional website design, software development and maintenance services. Create stunning websites with personalized service and modern amenities.",
+    url: "https://boostweb.io",
   },
   twitter: {
     card: "summary_large_image",
-    // site: "@YourTwitterHandle",
-    title: "Accommodation Villa Panorama - Istria",
+    title: "Boost Web - Professional Website Design & Maintenance Services",
     description:
-      "Welcome to Villa Panorama, your luxurious accommodation in Istria. Experience breathtaking views, modern amenities, and personalized service. ⭐⭐⭐⭐⭐",
+      "Boost Web offers professional website design, software development and maintenance services. Create stunning websites with personalized service and modern amenities.",
     images: [
       {
-        url: "https://www.villapanoramaistria.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F27.92c57344.jpg&w=3840&q=75",
-        alt: "Villa Panorama",
+        url: "/assets/images/logo.png",
+        alt: "Boost Web",
       },
     ],
   },
