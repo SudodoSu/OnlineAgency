@@ -15,7 +15,7 @@ function ServicesList() {
           className="px-8 py-16 rounded-[20px] flex flex-col justity-center items-center text-center bg-gray2"
         >
           <div
-            className={`p-4 rounded-[30px] max-w-[104px] max-h-[104px] ${
+            className={`p-8 rounded-[30px] max-w-[104px] max-h-[104px] ${
               Hovered[0] && index == Hovered[1] ? "bg-gradient" : "bg-gray3"
             } mb-10 `}
           >
