@@ -4,6 +4,7 @@ import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "./style.css";
 
 export default function SliderComponent() {
   var settings = {
@@ -46,8 +47,8 @@ export default function SliderComponent() {
     <div>
       <Slider {...settings}>
         {ReferencesSlider.data.map((item, index) => (
-          <div key={index} className="">
-            <div key={index} className="flex items-end mx-2 rounded-md">
+          <a key={index} href={item.href} target="_blank">
+            <div key={index} className="flex items-end mx-4 rounded-md">
               <Image
                 src={item.src}
                 alt={item.alt}
@@ -56,7 +57,7 @@ export default function SliderComponent() {
                 className="rounded-md"
               />
             </div>
-          </div>
+          </a>
         ))}
       </Slider>
     </div>

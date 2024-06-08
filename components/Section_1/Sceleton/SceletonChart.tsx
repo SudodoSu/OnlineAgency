@@ -65,8 +65,8 @@ function SceletonChart() {
             y2="19.2609"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FF9898" />
-            <stop offset="1" stop-color="#8054FF" />
+            <stop stop-color="#6fb1fc" />
+            <stop offset="1" stop-color="#0052d4" />
           </linearGradient>
           <linearGradient
             id="paint1_linear_408_1707"
@@ -76,8 +76,8 @@ function SceletonChart() {
             y2="32.1472"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FF9898" />
-            <stop offset="1" stop-color="#8054FF" />
+            <stop stop-color="#6fb1fc" />
+            <stop offset="1" stop-color="#0052d4" />
           </linearGradient>
           <linearGradient
             id="paint2_linear_408_1707"
@@ -87,8 +87,8 @@ function SceletonChart() {
             y2="53.2213"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FF9898" />
-            <stop offset="1" stop-color="#8054FF" />
+            <stop stop-color="#6fb1fc" />
+            <stop offset="1" stop-color="#0052d4" />
           </linearGradient>
           <linearGradient
             id="paint3_linear_408_1707"
@@ -98,8 +98,8 @@ function SceletonChart() {
             y2="68.0245"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FF9898" />
-            <stop offset="1" stop-color="#8054FF" />
+            <stop stop-color="#6fb1fc" />
+            <stop offset="1" stop-color="#0052d4" />
           </linearGradient>
           <linearGradient
             id="paint4_linear_408_1707"
@@ -109,8 +109,8 @@ function SceletonChart() {
             y2="85.2583"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FF9898" />
-            <stop offset="1" stop-color="#8054FF" />
+            <stop stop-color="#6fb1fc" />
+            <stop offset="1" stop-color="#0052d4" />
           </linearGradient>
         </defs>
       </svg>

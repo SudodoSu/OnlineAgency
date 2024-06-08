@@ -1,0 +1,7 @@
+.slick-next::before, .slick-prev::before {
+    @apply text-4xl;
+}
+
+.slick-prev::before {
+    @apply right-3 relative;
+}

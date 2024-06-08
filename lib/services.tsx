@@ -19,32 +19,39 @@ type DataObject = {
 export const servicesData: DataObject = {
   data: [
     {
-      path: <MdOutlineDesignServices className="text-5xl text-white" />,
+      path: (
+        <MdOutlineDesignServices className="text-7xl text-white" size="48px" />
+      ),
       title: "Web Design",
       des: "Crafting visually stunning and user-friendly websites that engage and convert visitors",
     },
     {
-      path: <TbSeo className="text-5xl text-white" />,
+      path: <TbSeo className="text-5xl text-white" size="48px" />,
       title: "Search Engine Optimization",
       des: "Improving your website to increase its visibility in Google",
     },
     {
-      path: <DiResponsive className="text-5xl text-white" />,
+      path: <DiResponsive className="text-5xl text-white" size="48px" />,
       title: "Responsive Design",
       des: "Ensuring your website looks great and functions seamlessly on all devices, from desktops to smartphones",
     },
     {
-      path: <SiGooglemarketingplatform className="text-5xl text-white" />,
+      path: (
+        <SiGooglemarketingplatform
+          className="text-5xl text-white"
+          size="48px"
+        />
+      ),
       title: "Marketing",
       des: "Developing tailored strategies to elevate your brand and reach your target audience effectively",
     },
     {
-      path: <FaBusinessTime className="text-5xl text-white" />,
+      path: <FaBusinessTime className="text-5xl text-white" size="48px" />,
       title: "Business Solutions",
       des: "Providing innovative tools and strategies to streamline operations and drive business growth",
     },
     {
-      path: <GrHostMaintenance className="text-5xl text-white" />,
+      path: <GrHostMaintenance className="text-5xl text-white" size="48px" />,
       title: "Maintenance",
       des: "Offering comprehensive support to keep your website secure, up-to-date, and running smoothly",
     },

@@ -72,8 +72,9 @@ function Object() {
           y2="250.81"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF9898" />
-          <stop offset="1" stop-color="#8054FF" />
+          <stop stop-color="#0052d4" />
+
+          <stop offset="1" stop-color="#6fb1fc" />
         </linearGradient>
       </defs>
     </svg>

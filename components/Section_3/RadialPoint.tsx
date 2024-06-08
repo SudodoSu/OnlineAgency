@@ -30,8 +30,8 @@ function RadialPoint() {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(10.1818 -2.1818) rotate(68.4287) scale(33.628 396.153)"
           >
-            <stop stop-color="#FF9898" />
-            <stop offset="1" stop-color="#8054FF" />
+            <stop stop-color="#6fb1fc" />
+            <stop offset="1" stop-color="#0052d4" />
           </radialGradient>
           <radialGradient
             id="paint1_radial_408_1684"
@@ -41,8 +41,8 @@ function RadialPoint() {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(12.7059 5.70588) rotate(68.4287) scale(19.0394 224.292)"
           >
-            <stop stop-color="#FF9898" />
-            <stop offset="1" stop-color="#8054FF" />
+            <stop stop-color="#6fb1fc" />
+            <stop offset="1" stop-color="#0052d4" />
           </radialGradient>
         </defs>
       </svg>

@@ -5,7 +5,7 @@ import { FcCancel } from "react-icons/fc";
 type LinksData = {
   title: string;
   des: { icon: string | ReactNode; text: string }[];
-  price: number;
+  price?: number;
 };
 
 type DataObject = {
@@ -27,11 +27,11 @@ export const PricingPackage: DataObject = {
         { icon: <FaCheck color="green" />, text: "Contact Form" },
         { icon: <FaCheck color="green" />, text: "Speed Optimization" },
         { icon: <FcCancel />, text: "Website Traffic Insights" },
-        { icon: <FcCancel />, text: "Payment integration" },
         { icon: <FcCancel />, text: "SEO" },
+        { icon: <FcCancel />, text: "Payment integration" },
         { icon: <FcCancel />, text: "Business Solutions" },
       ],
-      price: 100,
+      price: 150,
     },
     {
       title: "Professional",
@@ -46,30 +46,29 @@ export const PricingPackage: DataObject = {
         { icon: <FaCheck color="green" />, text: "Contact Form" },
         { icon: <FaCheck color="green" />, text: "Speed Optimization" },
         { icon: <FaCheck color="green" />, text: "Website Traffic Insights" },
+        { icon: <FaCheck color="green" />, text: "SEO" },
         { icon: <FaCheck color="green" />, text: "Payment integration" },
-        { icon: <FcCancel />, text: "SEO" },
         { icon: <FcCancel />, text: "Business Solutions" },
       ],
-      price: 200,
+      price: 250,
     },
     {
-      title: "Premium",
+      title: "Custom",
       des: [
         {
           icon: <FaCheck color="green" />,
-          text: "UI/UX Design on a Single Page",
+          text: "UI/UX Design",
         },
         { icon: <FaCheck color="green" />, text: "Responsive Design" },
-        { icon: <FaCheck color="green" />, text: "Presentation Gallery" },
+        { icon: <FaCheck color="green" />, text: "Interactive Gallery" },
         { icon: <FaCheck color="green" />, text: "Google Maps Integration" },
         { icon: <FaCheck color="green" />, text: "Contact Form" },
         { icon: <FaCheck color="green" />, text: "Speed Optimization" },
         { icon: <FaCheck color="green" />, text: "Website Traffic Insights" },
-        { icon: <FaCheck color="green" />, text: "Payment integration" },
         { icon: <FaCheck color="green" />, text: "SEO" },
+        { icon: <FaCheck color="green" />, text: "Payment integration" },
         { icon: <FaCheck color="green" />, text: "Business Solutions" },
       ],
-      price: 500,
     },
   ],
 };

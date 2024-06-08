@@ -230,6 +230,48 @@ export default function Faq() {
           handle the technical details while you focus on growing your business.
         </AccordionDetails>
       </Accordion>
+      <Accordion
+        expanded={expanded === "panel7"}
+        onChange={handleChange("panel7")}
+        sx={{ borderRadius: "6px", backgroundColor: "#18181C" }}
+      >
+        <AccordionSummary
+          expandIcon={
+            expanded === "panel7" ? (
+              <RemoveIcon className="text-white" />
+            ) : (
+              <AddIcon className="text-white" />
+            )
+          }
+          aria-controls="panel7-content"
+          id="panel7-header"
+          sx={{
+            borderBottom: expanded === "panel7" ? "1px solid #9E9E9E" : "",
+            backgroundColor: "#18181C",
+            color: "#FFFFFF",
+            borderRadius: "6px",
+          }}
+        >
+          Why should we work with you over any other firm?
+        </AccordionSummary>
+        <AccordionDetails sx={{ color: "#9E9E9E", paddingTop: "20px" }}>
+          Great question, as there are many options. However, it is important to
+          keep in mind that well over 95% of web development or design
+          businesses are using a Content Management System to create their
+          websites, filling our pre-created templates with your information.
+          <br />
+          <br />
+          This may be ok with you, however it is not a good solution long-term.
+          <br />
+          <br />
+          This decision does ultimately come down to what you feel is right for
+          you and your needs alone. However, we can guarantee that what we
+          provide you will be specifically tailored to your needs, and not just
+          some filled out template that many other sites are using. We go above
+          and beyond for you and will be using the best technologies available
+          to create your site, not just what is convenient for us.
+        </AccordionDetails>
+      </Accordion>
     </div>
   );
 }

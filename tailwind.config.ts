@@ -29,7 +29,18 @@ const config: Config = {
     },
     extend: {
       backgroundImage: {
-        gradient: "linear-gradient(90deg, #FF9898, #8054FF)",
+        // gradient: "linear-gradient(90deg, #FF9898, #8054FF)",
+
+        // gradient: "linear-gradient(90deg, #00c6ff, #0072ff)",
+        // gradient: "linear-gradient(90deg, #0072ff, #00ff7f)",
+        // gradient: "linear-gradient(90deg, #0052d4, #4364f7, #6fb1fc)",
+        // gradient: "linear-gradient(90deg, #0072ff, #f06292)",
+        // gradient: "linear-gradient(90deg, #0072ff, #f09433)",
+        // gradient: "linear-gradient(90deg, #0072ff, #ffeb3b)",
+        // gradient: "linear-gradient(90deg, #0072ff, #ff416c)",
+        // gradient: "linear-gradient(90deg, #4b6cb7, #182848)",
+        gradient: "linear-gradient(90deg, #0052d4, #4364f7, #6fb1fc)",
+
         "gradient-gray-radial":
           "linear-gradient(120deg, #494955 0%,  #141414 100%)",
         "gradient-gray-linear":
@@ -46,14 +57,6 @@ const config: Config = {
         poppins: ["var(--font-poppins)"],
       },
       colors: {
-        brown: "#755B3E",
-        darkbrown: "#54422e",
-        yellow: "#B29600",
-        light_blue: "#91D8F7",
-        blue: "#0098DA",
-        pink: "#cc3bb1",
-        dark_yellow: "#857001",
-        dark_blue_black: "#343a40",
         gray: "#9E9E9E",
         gray1: "#131415",
         gray2: "#18181C",
