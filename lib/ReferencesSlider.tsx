@@ -17,7 +17,12 @@ export const ReferencesSlider: DataObject = {
       title: "Services",
       href: "https://villarelaxpula.com/",
     },
-
+    {
+      src: "/images/crypto_ai.png",
+      alt: "BoostWeb",
+      title: "Services",
+      href: "https://cryptocurrency-website-smoky.vercel.app/",
+    },
     {
       src: "/images/villapanorama_mobile.png",
       alt: "BoostWeb",
